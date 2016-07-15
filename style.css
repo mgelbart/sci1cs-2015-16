@@ -1,0 +1,63 @@
+body {
+	background-color: #eef;
+	margin: 0;
+}
+body > * {		/* All direct descendents of body. * means everything and > means direct child. */
+	margin-left: 32px;
+	margin-right: 32px;
+	border: 1px solid transparent;
+}
+body > h1 {		/* Only the h1 that are direct decendents of body, i.e., not including those in sections. */
+	margin-left: 32px;
+	margin-right: 32px;
+}
+body > h2 {		/* Only the h1 that are direct decendents of body, i.e., not including those in sections. */
+	margin-left: 42px;
+	font-size: 115%;
+}
+nav {
+	margin: 0;
+	border: 0;
+}
+section {
+	border: 1px solid #ccc;
+	padding: 1em;
+	margin: 16px 32px; /* First top/bottom, then sides. */
+	border-radius: 5px;
+	background-color: #fff;
+	clear: left;  /* Go after anything that is floating left (i.e., headshot). */
+}
+section h1 {
+	margin: 0;
+}
+nav li {
+	list-style: none;
+	margin: 0; 
+	display: inline-block;
+	border: 1px solid transparent;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+	padding-left: 1em;
+}
+nav a {
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+#headshot{
+	height: 192px;
+	float: left;
+	margin-right: 16px;
+	margin-top: 28px;
+	margin-bottom: 16px;
+}
+#toc{
+    padding: 0em 2em;
+}
+#navbar{
+	background-color: #ccf;
+	padding: 0.25em 1em;
+}
