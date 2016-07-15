@@ -1,0 +1,103 @@
+dhcp-128-189-230-55:code mgelbart$ ipython
+Python 2.7.11 |Anaconda 2.3.0 (x86_64)| (default, Dec  6 2015, 18:57:58) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 3.2.0 -- An enhanced Interactive Python.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://anaconda.org
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: import numpy as np
+
+In [2]: x = np.zeros(5)
+
+In [3]: y = []
+
+In [4]: z = dict()
+
+In [5]: z = {}
+
+In [6]: z[4] = 5.0
+
+In [7]: z[1] = 7.0
+
+In [8]: z[-99] = 7.0
+
+In [9]: z[1.5] = 7.0
+
+In [10]: z["hello"] = 99999
+
+In [11]: z[3] = "abc"
+
+In [12]: print z
+{1.5: 7.0, 1: 7.0, 3: 'abc', 4: 5.0, 'hello': 99999, -99: 7.0}
+
+In [13]: z[3] = "new value"
+
+In [14]: print z
+{1.5: 7.0, 1: 7.0, 3: 'new value', 4: 5.0, 'hello': 99999, -99: 7.0}
+
+In [15]: z
+Out[15]: {-99: 7.0, 1: 7.0, 1.5: 7.0, 3: 'new value', 4: 5.0, 'hello': 99999}
+
+In [16]: l = [5,6,7]
+
+In [17]: for i in range(len(l)):
+   ....:     print l[i]
+   ....:     
+5
+6
+7
+
+In [18]: for l_i in l:
+   ....:     print l_i
+   ....:     
+5
+6
+7
+
+In [19]: len(z)
+Out[19]: 6
+
+In [20]: for key in z:
+   ....:     print key
+   ....:     
+1.5
+1
+3
+4
+hello
+-99
+
+In [21]: for key in z:
+   ....:     print z[key]
+   ....:     
+7.0
+7.0
+new value
+5.0
+99999
+7.0
+
+In [22]: s = "The current time is 12:01 PM"
+
+In [23]: len(s)
+Out[23]: 28
+
+In [24]: s[2]
+Out[24]: 'e'
+
+In [25]: s[2:5]
+Out[25]: 'e c'
+
+In [26]: s[4:10]
+Out[26]: 'curren'
+
+In [27]: s[4:]
+Out[27]: 'current time is 12:01 PM'
+
+In [28]: s[:4]
+Out[28]: 'The '
